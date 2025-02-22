@@ -1,0 +1,295 @@
+@font-face {
+  font-family: 'Bergen Sans';
+  src: url('assets/BergenSans-Regular.otf');
+}
+
+body {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.page-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #FFFFFF;
+}
+
+h1 {
+  font-family: 'Bergen Sans';
+  display: flex;
+  align-items: center;
+  font-size: 2.1em;
+  color: #EF7021;
+  margin: 0;
+  margin-left: .5%;
+  letter-spacing: 2px;
+}
+
+.logo {
+  height: 3em;
+  margin-left: 1%
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #F5F5F5;
+  height: 20%;
+  width: 100%;
+}
+
+.icon-orange {
+  color: #EF7021;
+}
+
+.icon-white {
+  color: #FFFFFF;
+}
+
+.icons-container {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: flex-end;
+  margin-right: 1vw
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EF7021;
+  border-radius: 5px;
+  height: 3em;
+  width: 3em;
+  margin-left: 1vw;
+}
+
+.icon-box-fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EF7021;
+  background-color: #EF7021;
+  border-radius: 5px;
+  height: 3em;
+  width: 3em;
+  margin-left: 1vw;
+}
+
+.filter-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #FFFFFF;
+  font-family: 'Bergen Sans';
+  font-size: 1em;
+  color: #EF7021;
+  border: 2.8px solid #EF7021;
+  border-radius: 8px;
+  height: 3em;
+  width: 9em;
+  margin: 1%;
+}
+
+.button:hover {
+  color: #FFFFFF;
+  background-color: #EF7021;
+}
+
+#input {
+  font-family: 'Bergen Sans';
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  color: #aaaaaa;
+  height: 3em;
+  width: 70em;
+  border-radius: 5px;
+  border: 2px solid #ECECEC;
+}
+
+#input-small {
+  font-family: 'Bergen Sans';
+  padding-left: 10px;
+  display: none;
+  align-items: center;
+  color: #aaaaaa;
+  height: 3em;
+  border-radius: 5px;
+  border: 2px solid #ECECEC;
+  margin: 1%;
+}
+
+input {
+  font-family: 'Bergen Sans';
+  font-size: 1em;
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding-left: 5px;
+  outline: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin: 1%;
+}
+
+.building {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: beige;
+  border-radius: 15px;
+  height: 34vh;
+  padding: 4%;
+}
+
+.building-img {
+  height: 100%;
+  width: 100%;
+}
+
+.building-name {
+  font-family: 'Bergen Sans';
+  display: flex;
+  background-color: #EF7021;
+  height: 6.5vh;
+  width: 95%;
+  border-radius: 10px;
+  align-items: center;
+  color: #FFFFFF;
+  padding-left: 6%;
+}
+
+.availability {
+  font-family: 'Bergen Sans';
+  font-size: .8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  height: 3.5vh;
+  width: fit-content;
+  padding-left: 4%;
+  padding-right: 4%;
+  border-radius: 15px;
+  align-self: flex-end;
+}
+
+.availability-small {
+  font-family: 'Bergen Sans';
+  font-size: .8em;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  height: 3.5vh;
+  width: fit-content;
+  padding-left: 4%;
+  padding-right: 4%;
+  border-radius: 15px;
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .building {
+    height: 20vh;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .building {
+    height: 20vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icon-box {
+    height: 8vw;
+    width: 8vw;
+  }
+  
+  .icon-box-fill {
+    height: 8vw;
+    width: 8vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .icon-box {
+    height: 10vw;
+    width: 10vw;
+  }
+  
+  .icon-box-fill {
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .building {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .building-name {
+    display: inline;
+    background-color: transparent;
+    height: fit-content;
+    width: 50%;
+    align-items: start;
+  }
+  .building {
+    height: 10vh;
+  }
+
+  h1 {
+    display: none;
+  }
+  .availability {
+    display: none;
+  }
+  .availability-small {
+    display: flex;
+  }
+  #input {
+    display: none;
+  }
+  #input-small {
+    display: flex;
+  }
+}
